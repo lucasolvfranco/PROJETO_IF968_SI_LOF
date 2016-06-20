@@ -57,7 +57,7 @@ def stopWords(lista):
     arquivo.close()
     #removendo '\n' das palavras e armazenando as stopwords numa lista
     for palavra in lista_arquivo :
-        palavra = palavra.strip('\n')
+        palavra = clean_up(palavra)
         listaStop.append(palavra)
 
     #armazenando os elementos que nao sao stopwords da lista numa nova lista
