@@ -118,6 +118,7 @@ def readTestSet(fname):
         for linha in arquivo_linhas :
             linha = linha.strip("\n")
             linha = linha.strip("\t")
+            linha = clean_up(linha)
             reviews.append((int(linha[0]),linha[2:]))
 
         return reviews
