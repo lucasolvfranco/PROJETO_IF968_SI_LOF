@@ -144,7 +144,7 @@ def computeSentiment(review,words):
             count = count + 1
         else:
             score = score + words[palavra][-1]
-            count = cont + 1
+            count = count + 1
 
     return score/count
 
