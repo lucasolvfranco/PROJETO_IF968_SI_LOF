@@ -76,7 +76,7 @@ def readTrainingSet(fname):
     aux = []
     words = dict()
     arquivo = open('trainSet.txt')
-    arquivo_linhas = list(arquivo)
+    arquivo_linhas = arquivo.readlines()
     arquivo.close()
     #Limpando cada linha com o clean_up()
     for linha in arquivo_linhas :
